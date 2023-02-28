@@ -8,7 +8,6 @@
 
 Explorer - Stage 09 - Front-End for the RocketNotes Web App
 
-![image](https://user-images.githubusercontent.com/62391659/221231257-ab4f594c-aa2a-4569-ad68-6acd25c2e138.png)
 
 <div id="Description">
 
@@ -64,7 +63,7 @@ $ git clone <https://github.com/Jcassio-dev/API_Notes-STAGE-08-EXPLORER.git>
 #### Access project folder in terminal/cmd
 
 ```bash
-$ cd /API_Notes-STAGE-08-EXPLORER
+$ cd /RocketNotes-FrontEnd
 ```
 
 #### Install the dependencies
