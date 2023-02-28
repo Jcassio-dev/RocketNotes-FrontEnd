@@ -7,8 +7,11 @@
 </p>
 
 Explorer - Stage 09 - Front-End for the RocketNotes Web App
+<div align="center">
 
+https://user-images.githubusercontent.com/62391659/221739014-4e9059e3-8608-4867-9d87-87a1ee7c463a.mp4
 
+</div>
 <div id="Description">
 
 ## Description
