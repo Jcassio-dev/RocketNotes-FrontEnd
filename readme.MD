@@ -42,6 +42,7 @@ Figma Design:
 - Icon library;
 - Grid layout;
 - Theme and global styles;
+- LocalStorage
 
 </div>
 <div id="Technologies">
