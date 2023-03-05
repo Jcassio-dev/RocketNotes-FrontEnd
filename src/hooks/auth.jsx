@@ -20,7 +20,6 @@ function AuthProvider({children}){
     
             api.defaults.headers.authorization = `Barrer ${token}`
             setData({user, token})
-            console.log(data)
 
         }catch(error){
             if(error.response){
@@ -31,6 +30,13 @@ function AuthProvider({children}){
         }
     
     
+    }
+
+    async function signOut(){
+       localStorage.removeItem("rocketnotes:token");
+       localStorage.removeItem("rocketnotes:user");
+       
+       setData({});
     }
         useEffect(() => {
             const token = localStorage.getItem("rocketnotes:token")
@@ -45,7 +51,7 @@ function AuthProvider({children}){
             }
         }, [])
     return(
-        <AuthContext.Provider value={{signIn, user: data.user}}>
+        <AuthContext.Provider value={{signIn, signOut, user: data.user}}>
             {children}
         </AuthContext.Provider>
     )
