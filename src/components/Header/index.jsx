@@ -8,7 +8,9 @@ import { useAuth } from "../../hooks/auth";
 
 export function Header () {
     const { signOut, user } = useAuth()
+
     const avatarURL = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : avatarPlaceholder;
+    
     return(
         <Container>
             <Profile to="/profile">
