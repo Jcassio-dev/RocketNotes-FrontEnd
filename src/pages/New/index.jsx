@@ -11,6 +11,7 @@ import { Section } from '../../components/Section'
 import { Button } from '../../components/Button' 
 import { Container, Form } from "./styles";
 import { ButtonText } from '../../components/ButtonText'
+import { toast } from 'react-toastify'
 
 
 export function New() {
@@ -47,13 +48,13 @@ export function New() {
 
     async function handleNewNote(){
         if(!title){
-            return alert("Insira um texto para o título da nota");
+            return toast.warning("Insira um texto para o título da nota");
         }
         if(newLink){
-            return alert("O campo de Link está preenchido, mas não foi adicionado. Aperte o botão para adicionar o link ou deixe o campo vázio.")
+            return toast.warning("O campo de Link está preenchido, mas não foi adicionado. Aperte o botão para adicionar o link ou deixe o campo vázio.")
         }
         if(newTag){
-            return alert("O campo de Tag está preenchido, mas não foi adicionado. Aperte o botão para adicionar a tag ou deixe o campo vázio.")
+            return toast.warning("O campo de Tag está preenchido, mas não foi adicionado. Aperte o botão para adicionar a tag ou deixe o campo vázio.")
         }
 
         await api.post("/notes", {
@@ -63,7 +64,7 @@ export function New() {
             links
         });
 
-        alert("Nota criada!");
+        toast.success("Nota criada!");
         handleBack()
     }
 

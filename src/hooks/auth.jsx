@@ -1,4 +1,5 @@
 import { createContext, useContext, useEffect, useState } from "react";
+import { toast } from "react-toastify";
 import { api } from "../services/api"
 
 
@@ -23,9 +24,9 @@ function AuthProvider({children}){
 
         }catch(error){
             if(error.response){
-                alert(error.response.data.message);
+                toast.error(error.response.data.message);
             }else{
-                alert("Não foi possível entrar na aplicação")
+                toast.error("Não foi possível entrar na aplicação")
             }
         }
     
@@ -53,13 +54,13 @@ function AuthProvider({children}){
         await api.put("/users", user)
         localStorage.setItem("@rocketnotes:user", JSON.stringify(user));
         setData({user, token: data.token})
-        alert("Perfil Atualizado!")
+        toast.success("Usuário atualizado!")
 
         }catch(error){
             if(error.response){
-            alert(error.response.data.message);
+            toast.error(error.response.data.message);
             }else{
-            alert("Não foi possível atualizar o perfil")
+            toast.error("Não foi possível atualizar o perfil")
             }
     }
         
