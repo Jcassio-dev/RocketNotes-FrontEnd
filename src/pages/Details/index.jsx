@@ -23,6 +23,15 @@ export function Details (){
     navigate("/")
   }
 
+  async function handleDeleteNote(){
+    const confirm = window.confirm("Deseja excluir esta nota?")
+
+    if(confirm){
+      await api.delete(`/notes/${params.id}`);
+      navigate("/")
+    }
+  }
+
   useEffect(()=>{
     async function fetchNote(){
       const response = await api.get(`notes/${params.id}`)
@@ -40,7 +49,7 @@ export function Details (){
      data &&
      <main>
         <Content>
-          <ButtonText title='Excluir a nota'/>
+          <ButtonText title='Excluir a nota' onClick={handleDeleteNote}/>
             <h1>
               {data.title}
             </h1>
