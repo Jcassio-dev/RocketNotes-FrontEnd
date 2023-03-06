@@ -9,8 +9,8 @@ import { Textarea} from '../../components/Textarea'
 import { NoteItem } from '../../components/NoteItem' 
 import { Section } from '../../components/Section' 
 import { Button } from '../../components/Button' 
-
 import { Container, Form } from "./styles";
+import { ButtonText } from '../../components/ButtonText'
 
 
 export function New() {
@@ -25,6 +25,9 @@ export function New() {
 
     const navigate = useNavigate();
 
+    function handleBack(){
+        navigate(-1)
+    }
     function handleAddLink(){
         setLinks(prevState => [...prevState, newLink]);
         setNewLink("")
@@ -61,7 +64,7 @@ export function New() {
         });
 
         alert("Nota criada!");
-        navigate("/")
+        handleBack()
     }
 
     return(
@@ -72,7 +75,7 @@ export function New() {
                <Form>
                     <header>
                         <h1>Criar nota</h1>
-                        <Link to="/">Voltar</Link>
+                        <ButtonText title="voltar" onClick={handleBack} />
                     </header>
 
                     <Input
