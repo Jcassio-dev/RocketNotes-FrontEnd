@@ -30,6 +30,10 @@ export function New() {
         navigate(-1)
     }
     function handleAddLink(){
+        if(!newLink){
+            return toast.warning("Adicione algum conteúdo para criar a tag.")
+         }
+
         setLinks(prevState => [...prevState, newLink]);
         setNewLink("")
     }
@@ -39,6 +43,9 @@ export function New() {
     }
 
     function handleAddTag(){
+        if(!newTag){
+           return toast.warning("Adicione algum conteúdo para criar a tag.")
+        }
         setTags(prevState=> [...prevState, newTag]);
         setNewTag("");
     }
