@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 
 import { Input } from '../../components/Input';
 import { Button } from '../../components/Button';
+import { toast } from "react-toastify";
 
 
 export function SignIn(){
@@ -17,6 +18,7 @@ export function SignIn(){
     const { signIn } = useAuth();
 
     function handleSignIn(){
+        toast.promise("Carregando")
         signIn({ email, password })
     }
     return(
