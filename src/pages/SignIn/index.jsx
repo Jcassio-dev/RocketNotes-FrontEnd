@@ -18,7 +18,7 @@ export function SignIn(){
     const { signIn } = useAuth();
 
     function handleSignIn(){
-        toast.promise("Carregando")
+        toast.loading("Carregando")
         signIn({ email, password })
     }
     return(
