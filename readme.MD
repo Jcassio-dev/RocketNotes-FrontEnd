@@ -9,7 +9,11 @@
 Explorer - Stage 09 - Front-End for the RocketNotes Web App
 <div align="center">
 
-https://user-images.githubusercontent.com/62391659/221739014-4e9059e3-8608-4867-9d87-87a1ee7c463a.mp4
+
+
+https://user-images.githubusercontent.com/62391659/223179460-dbe8f8fd-1981-4c15-b2d1-762bcf22f306.mp4
+
+
 
 </div>
 <div id="Description">
@@ -61,7 +65,7 @@ Figma Design:
 #### Clone this repository
 
 ```bash
-$ git clone <https://github.com/Jcassio-dev/API_Notes-STAGE-08-EXPLORER.git>
+$ git clone https://github.com/Jcassio-dev/API_Notes-STAGE-08-EXPLORER.git
 ```
 
 #### Access project folder in terminal/cmd
