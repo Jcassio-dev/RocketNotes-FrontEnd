@@ -50,7 +50,7 @@ Figma Design:
 ## Technologies:
 
 - Languages: `Javascript` `CSS` `HTML`
-- Libraries: `react` `react-icons` `styled-components` `react-router-dom` `axios` `react-toastify`
+- Libraries: `react` `react-icons` `styled-components` `react-router-dom` `axios` `react-toastify` 
 - Version control: `Git & Github`
 
 </div>
