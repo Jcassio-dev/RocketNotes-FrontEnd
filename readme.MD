@@ -25,7 +25,7 @@ https://cassio-rocketnotes.netlify.app/
 React project developed during the Stage 09 of the Rocketseat bootcamp.
 
 It's the Front-end for the API created with Node, for the back-end developed in Stage 08:
-- https://github.com/Jcassio-dev/RocketNotes-FrontEnd
+- https://github.com/Jcassio-dev/API_Notes-STAGE-08-EXPLORER
 
 Figma Design:
 - https://www.figma.com/file/hbBzycZDR4WGSVWyK5aOqV/RocketNotes?node-id=0%3A1&t=y0XwEeDK7fHcLGTk-0
